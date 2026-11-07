@@ -5,13 +5,27 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Segoe UI', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(135deg, #ffe0ec, #fff1f5, #fce4ec);
+
+    background-image:
+        linear-gradient(
+            rgba(255, 240, 230, 0.25),
+            rgba(255, 230, 235, 0.25)
+        ),
+        url("images/capybara-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     overflow-x: hidden;
-    color: #9c5475;
+    color: #795548;
 }
+
 
 .container {
     min-height: 100vh;
@@ -21,16 +35,35 @@ body {
     padding: 25px;
 }
 
+
 .intro, .birthday {
     width: 100%;
     max-width: 650px;
     padding: 40px 25px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.75);
+
+    background: rgba(255, 250, 240, 0.90);
+    backdrop-filter: blur(8px);
+
+    border: 3px solid #f3c9a5;
     border-radius: 30px;
-    box-shadow: 0 10px 40px #e8a9c455;
+
+    box-shadow: 0 10px 40px rgba(100, 65, 35, 0.2);
     animation: appear 1s ease;
 }
+
+h1, h2 {
+    color: #a66b43;
+}
+
+button {
+    background: #c88c68;
+}
+
+button:hover {
+    background: #a66b43;
+}
+
 
 .flower {
     font-size: 65px;
